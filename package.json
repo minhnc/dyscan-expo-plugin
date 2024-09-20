@@ -1,0 +1,40 @@
+{
+  "name": "dyscan-expo-plugin",
+  "version": "1.0.0",
+  "description": "The DyScan Expo plugin allows you to use @dyneti/react-native-dyscan without leaving the managed workflow.",
+  "packageManager": "yarn@4.1.1",
+  "main": "app.plugin.js",
+  "types": "plugin/build/index.d.ts",
+  "author": "Minh Nguyen <minhnc.com@gmail.com>",
+  "files": [
+    "app.plugin.js",
+    "plugin/build"
+  ],
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier '**/*.{js,ts(x)}' -w --ignore-unknown --no-error-on-unmatched-pattern",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "dyscan",
+    "dyneti"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minhnc/dyscan-expo-plugin/issues"
+  },
+  "homepage": "https://github.com/minhnc/dyscan-expo-plugin#readme",
+  "devDependencies": {
+    "eol": "^0.10.0",
+    "eslint": "^8.57.0",
+    "expo-module-scripts": "^3.5.2",
+    "prettier": "^3.3.1"
+  }
+}
