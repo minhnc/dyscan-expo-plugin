@@ -3,7 +3,7 @@ import { withProjectBuildGradle } from "@expo/config-plugins";
 
 import { appendContentsToConfig } from "./utils";
 
-const GRADLE_APPEND_ID = "expo-dyscan-import";
+const GRADLE_APPEND_ID = "dyscan-expo-plugin";
 const generateGradle = (username: string, password: string) => {
   return `
 // start-${GRADLE_APPEND_ID}
@@ -11,8 +11,8 @@ allprojects {
     repositories {
         maven {
             credentials  {
-                username = ${username}
-                password = ${password}
+                username = "${username}"
+                password = "${password}"
             }
             url "https://nexus.dyneti.com/repository/maven-releases/"
             authentication {
