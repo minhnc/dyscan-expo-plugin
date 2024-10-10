@@ -1,6 +1,6 @@
 {
   "name": "dyscan-expo-plugin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "The DyScan Expo plugin allows you to use @dyneti/react-native-dyscan without leaving the managed workflow.",
   "packageManager": "yarn@4.1.1",
   "homepage": "https://github.com/minhnc/dyscan-expo-plugin#readme",
